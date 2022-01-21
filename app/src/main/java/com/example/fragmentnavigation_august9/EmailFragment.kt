@@ -29,11 +29,11 @@ class EmailFragment : Fragment() {
         viewModel = ViewModelProvider(this)[UserViewModel::class.java]
         with(binding){
             nextBtn.setOnClickListener {
-                val firstName =
-                val lastName = lastNameEt.editText?.text.toString()
-                val email = emailEt.editText?.text.toString()
-                val user = User(firstName, lastName)
-                viewModel.addUser(user)
+//                val firstName =
+//                val lastName = lastNameEt.editText?.text.toString()
+//                val email = emailEt.editText?.text.toString()
+//                val user = User(firstName, lastName)
+//                viewModel.addUser(user)
                 val direction = actionEmailFragmentToPasswordFragment()
                 findNavController().navigate(direction)
             }
